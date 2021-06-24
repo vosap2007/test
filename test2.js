@@ -231,17 +231,49 @@ for (let i = 5; i < 10; i += 1) {
 console.log(i);
 }*/
 
+
+/*
 const employees = 5;
 const max = 5000;
 const min = 500;
-let totalSalary;
+let totalSalary=0;
 
 for (let i = 1; i <= employees; i += 1) {
 let salary = Math.round(Math.random() * (max-min) + min);
-totalSalary = salary;
-console.log (`Заработная плата работника ${i} ${totalSalary}`);
+totalSalary += salary;
+console.log (`Заработная плата работника ${i} ${salary}`);
 }
 
+console.log(totalSalary);
+*/
 
+/*const min = 6;
+const max = 13;
+let total = 0;
 
+for (let i = min; i <= max; i += 1) {
 
+if (i % 2 !== 0) {
+    continue
+}
+console.log(i);
+    total += i;
+};
+
+console.log(total);*/
+
+/*
+let balance = 10000;
+const payment = 5000;
+
+console.log(`Общая сумма покупки ${payment} гривен. Проверяем доступное количество средств на счету.`);
+
+if (payment <= balance) {
+    balance -= payment;
+    console.log(`На счету осталось ${balance} гривень.`);
+} else {
+    console.log(`На счету осталось не достаточно средств.`);
+};
+
+console.log('Операция завершена');
+*/
