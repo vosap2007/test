@@ -1,4 +1,4 @@
-const chooseBestDistance = (t, k, ls) => {
+/*const chooseBestDistance = (t, k, ls) => {
     let sum = 0;
     const recurs = (n, j) => {
       if (n)
@@ -18,7 +18,7 @@ const chooseBestDistance = (t, k, ls) => {
   };
   
   console.log(chooseBestDistance(174, 3, [51, 56, 58, 59, 61]));
-  console.log(chooseBestDistance(163, 3, [50]));
+  console.log(chooseBestDistance(163, 3, [50]));*/
   
 
 /*const chooseBestDistance = (t, k, ls) => {
