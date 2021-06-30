@@ -725,13 +725,41 @@ for (let ar of arr) {
 // console.log(findSmillestNumber(nummbers));
 
 
-const changeCase = function(string) {
-const array = string.split();
+// const changeCase = function(string) {
+// const array = string.split('');
+// let newArr = '';
 
-    for (let index = 0; index < string.length; index++) {
-        const element = string[index];
-        console.log(element);
-    }
+//     for (const i of array) {
+
+//       newArr += i === i.toLowerCase() ? i.toUpperCase() : i.toLowerCase() 
+//     };
+
+//     return newArr;
+// };
+
+// console.log(changeCase('JavaScript'));
+// console.log(changeCase('JDhsjhJHHDFKJHkjkjh'));
+
+
+
+// const string = 'Top 10 benefist of react framework';
+
+// const slugify = function (string) {
+//     return string.toLowerCase().split(' ').join('-');
+// };
+
+// console.log(slugify(string));
+
+
+const add = function (...args) {
+    let total = 0;
+
+    for (const i of args) {
+        total += i;
+    };
+
+    return total;
 };
 
-changeCase('JavaScript');
+console.log(add(1,2,3));
+console.log(add(1,2,3,4,5,6,7,8,9));
