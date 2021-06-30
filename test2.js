@@ -663,17 +663,75 @@ for (let ar of arr) {
 
 
 
-const calculateTotalPrice = function (carts) {
-    let total = 0;
+// const calculateTotalPrice = function (carts) {
+//     let total = 0;
 
-    for (const value of carts) {
-        total += value;
-    };
+//     for (const value of carts) {
+//         total += value;
+//     };
 
-    return total;
+//     return total;
+// };
+
+// console.log(calculateTotalPrice([11, 12, 78, 105, 478, 10, 68, 99, 5, 128]));
+
+// console.log(calculateTotalPrice([12, 15, 47, 5, 128]));
+// console.log(calculateTotalPrice([111, 182, 8, 15, 78, 108, 8, 100, 5]));
+
+
+// const logItems = function (item) {
+//      for (const i of item) {
+//          console.log(i);
+//      }
+// };
+
+// logItems  (['Voder', 'Vaik', 'Gorid', 'Obnova', 'Colin']);
+// logItems ([1, 2, 3, 4, 5, 6]);
+// logItems (['Рубашка', "Штаны", 'Шапка', 'Носки']);
+
+
+// const logins = ['Voder', 'Vaik', 'Gorid', 'Obnova', 'Colin'];
+// const loginToFinde = 'Gorid';
+
+// const findLogin = function (allLogins, login) {
+
+//     // for (const i of allLogins) {
+//     //     if (i === login) {
+//     //        return `Пользователь ${login} найден`;
+//     //     };
+//         return allLogins.includes(login) ? `Пользователь ${login} найден` :  `Пользователь ${login} не найден`;
+//      };
+//     // return `Пользователь ${login} не найден`;
+
+// console.log(findLogin(logins, loginToFinde));
+
+
+
+// const nummbers = [5, 45, 89, 4, 12];
+
+// const findSmillestNumber = function (nummbers) {
+
+//     let smillestNumber = nummbers[0];
+
+//     for (const number of nummbers) {
+//         if (number < smillestNumber) {
+//             smillestNumber = number;
+//         };
+//     };
+
+//     return smillestNumber;
+// };
+
+// console.log(findSmillestNumber(nummbers));
+
+
+const changeCase = function(string) {
+const array = string.split();
+
+    for (let index = 0; index < string.length; index++) {
+        const element = string[index];
+        console.log(element);
+    }
 };
 
-console.log(calculateTotalPrice([11, 12, 78, 105, 478, 10, 68, 99, 5, 128]));
-
-console.log(calculateTotalPrice([12, 15, 47, 5, 128]));
-console.log(calculateTotalPrice([111, 182, 8, 15, 78, 108, 8, 100, 5]));
+changeCase('JavaScript');
