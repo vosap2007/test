@@ -590,6 +590,90 @@ for (let ar of arr) {
 //   fn(1,2,3,4,5,6,7,8,9,10);
 
 
+// const cash = function (amaunt, balance) {
+//     let message = '';
+
+//     if (amaunt === 0) {
+//         message = 'Введите коректную сумму денег';
+//     } else if (balance >= amaunt) {
+//         message = `Операция успешна! Остаток на балансе ${balance - amaunt} денег`;
+//     } else {
+//         message = `На вашем счету не достаточно денег! Вы привысили баланс на ${amaunt - balance} денег`;
+//     }
+
+//     return message;
+// };
+
+// console.log(cash(0, 100));
+
+
+// const withdraw = function (amount, balance) {
+//     if (amount === 0) {
+//       console.log('Для проведения операции введите сумму больше нуля.');
+//     } else if (amount > balance) {
+//       console.log('Недостаточно средств на счету.');
+//     } else {
+//       console.log('Операция снятия средств проведена.');
+//     }
+//   };
+
+// const cash = function (amaunt, balance) {
+//     let message = '';
+
+//     if (amaunt === 0) {
+//         console.log('Введите коректную сумму денег');
+
+//         return;
+//     }; 
+    
+//     if (balance >= amaunt) {
+//         console.log(`Операция успешна! Остаток на балансе ${balance - amaunt} денег`);
+        
+//         return;
+//     }; 
+
+//     console.log(`На вашем счету не достаточно денег! Вы привысили баланс на ${amaunt - balance} денег`);
+    
+// };
+
+// console.log(cash(101, 100));
+
+// console.log(add(1,2,3));
+
+// console.log(1,2,3);
+
+
+// function add (a,b,c) {
+//     return a+b+c;
+// }
+
+// console.log(add(1,2,3));
+
+// const a = 5;
+
+// const add = function () {
+//    const b = 20;
+
+//     return a + b;
+// };
+
+// console.log(add());
 
 
 
+
+
+const calculateTotalPrice = function (carts) {
+    let total = 0;
+
+    for (const value of carts) {
+        total += value;
+    };
+
+    return total;
+};
+
+console.log(calculateTotalPrice([11, 12, 78, 105, 478, 10, 68, 99, 5, 128]));
+
+console.log(calculateTotalPrice([12, 15, 47, 5, 128]));
+console.log(calculateTotalPrice([111, 182, 8, 15, 78, 108, 8, 100, 5]));
