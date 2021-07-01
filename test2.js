@@ -751,15 +751,51 @@ for (let ar of arr) {
 // console.log(slugify(string));
 
 
-const add = function (...args) {
-    let total = 0;
+// const add = function (...args) {
+//     let total = 0;
 
-    for (const i of args) {
-        total += i;
-    };
+//     for (const i of args) {
+//         total += i;
+//     };
 
-    return total;
-};
+//     return total;
+// };
 
-console.log(add(1,2,3));
-console.log(add(1,2,3,4,5,6,7,8,9));
+// console.log(add(1,2,3));
+// console.log(add(1,2,3,4,5,6,7,8,9));
+
+
+
+// let newArr = [];
+
+// const filterNumbers = function (array, ...number ) {
+//     for (const i of array) {
+//         for (const k of number) {
+//             if (i === k) {
+//                newArr.push(k);
+//             };
+//         };
+//     }; 
+// };
+
+// filterNumbers([1,2,45,3,4,5], 6, 7, 45, 8, 2, 5);
+
+// console.log(newArr);
+
+
+
+// let newArr = [];
+
+// const filterNumbers = function (array, ...number ) {
+//         for (const i of array) {
+//             if(number.includes(i) === true) {
+//                 newArr.push(i);
+//             };
+//         }; 
+//     };
+    
+//     filterNumbers([1,2,45,3,4,5], 6, 7, 45, 8, 2, 5);
+    
+//     console.log(newArr);
+
+
