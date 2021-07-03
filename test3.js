@@ -362,12 +362,115 @@
 // console.table(allName(friends));
 
 
-const x = {
-    a: 5,
-    b: 10,
-    c: 30,
-    d: 100,
-};
+// const x = {
+//     a: 5,
+//     b: 10,
+//     c: 30,
+//     d: 100,
+// };
 
-console.log(Object.keys(x).length);
+// console.log(Object.keys(x).length);
+
+
+
+
+ const cart = {
+     items: [],
+
+     getItems() {
+         console.log(cart.items);
+    },
+
+     add(product) {
+         this.items.push(product);
+     },
+
+     remove(productName) {
+         for(const product of this.items) {
+            let index = this.items.indexOf(product);
+            if (product.name === productName) {
+                this.items.splice(index, 1);
+             };
+         };
+     },
+
+     clear() {
+         this.items = [];
+     },
+
+     countTotalPrice() {
+         let totalPrice = 0;
+
+         for(const prise of this.items) {
+            totalPrice += prise.price;
+         };
+
+         return totalPrice;
+     },
+
+     increaseQuantiti(productName) {
+        for(const product of this.items) {
+            if(product.name === productName) {
+               if(product.quantity === undefined) {
+                   product.quantity = 1;
+               } else {
+                product.quantity += 1;
+               };
+            }; 
+         }; 
+      },
+
+     decreaseQuantiti(productName) {for(const product of this.items) {
+            if(product.name === productName) {
+               if (product.quantity > 0) {
+                product.quantity -= 1;
+               } else if (product.quantity <= 0) {
+                   return console.log(`Количество твара ${productName} в корзине: 0`);
+               }
+            }; 
+         }; },
+ };
+
+ cart.add({name: 'Apple', price: 20});
+ cart.add({name: 'Limon', price: 30});
+ cart.add({name: 'Chery', price: 40});
+ cart.add({name: 'Carrot', price: 15});
+
+//cart.getItems();
+
+// cart.remove('Apple');
+// cart.remove('Carrot');
+
+//cart.clear();
+
+//cart.countTotalPrice();
+
+cart.increaseQuantiti('Apple');
+cart.increaseQuantiti('Apple');
+cart.increaseQuantiti('Apple');
+cart.increaseQuantiti('Apple');
+cart.increaseQuantiti('Apple');
+cart.increaseQuantiti('Apple');
+cart.increaseQuantiti('Apple');
+cart.increaseQuantiti('Apple');
+cart.increaseQuantiti('Apple');
+cart.increaseQuantiti('Apple');
+
+cart.increaseQuantiti('Chery');
+
+cart.decreaseQuantiti('Apple');
+cart.decreaseQuantiti('Apple');
+cart.decreaseQuantiti('Apple');
+cart.decreaseQuantiti('Apple');
+cart.decreaseQuantiti('Apple');
+
+cart.decreaseQuantiti('Chery');
+cart.decreaseQuantiti('Carrot');
+
+cart.increaseQuantiti('Carrot');
+
+console.log(cart.items);
+
+
+ 
 
