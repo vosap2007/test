@@ -201,4 +201,90 @@
 
 // console.log('после fn');
 
+// const arr = [1,2,3,4,5];
+// const arr2 = [1,2,3,4,5,6,7,8];
 
+
+
+// const filter = function (array, callback) {
+//     const filteredArray = [];
+
+//     for (let e of array) {
+//         let res = callback(e);
+
+//         if(res) {
+//             filteredArray.push(e);
+//         };
+//     };
+ 
+//     return filteredArray;
+// };
+
+// const callback1 = function (i) {
+//     return i >= 3;
+// };
+
+// const callback4 = function (i) {
+//     return i <= 4;
+// };
+
+
+// console.log(filter(arr, callback1));
+// console.log(filter(arr2, callback4));
+
+
+
+// const array1 = [1,2,3,4,5,6];
+// const array2 = [1,2,3,4,5,6,7,8,9,10];
+
+// const filter = function (array, callback) {
+//     const resArray = [];
+
+//     for (let e of array) {
+//        let res = callback(e);
+
+//        if(res) {
+//         resArray.push(e); 
+//        }
+//     };
+
+//     return resArray;
+// };
+
+// const callback1 = function (e) {
+//     return e > 2;
+//     };
+
+//     const callback2 = function (e) {
+//         return e < 6;
+//         };
+
+// console.log(filter(array1, callback1));
+// console.log(filter(array2, callback2));
+
+
+const fruts = [
+    {name: 'apples', quantiti: 200, isFresh: true},
+    {name: 'grapes', quantiti: 150, isFresh: false},
+    {name: 'bananas', quantiti: 100, isFresh: true},
+];
+
+const filter = function (array, callback) {
+    const arrFilter = [];
+    
+    for (let e of array) {
+       const res = callback(e);
+       
+       if(res) {
+           arrFilter.push(e);
+       };
+    };
+
+    return arrFilter;
+};
+
+const callback = function(e) {
+    return e.quantiti >= 150;
+};
+
+console.log(filter(fruts, callback));
