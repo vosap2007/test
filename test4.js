@@ -263,28 +263,140 @@
 // console.log(filter(array2, callback2));
 
 
-const fruts = [
-    {name: 'apples', quantiti: 200, isFresh: true},
-    {name: 'grapes', quantiti: 150, isFresh: false},
-    {name: 'bananas', quantiti: 100, isFresh: true},
-];
+// const fruts = [
+//     {name: 'apples', quantiti: 200, isFresh: true},
+//     {name: 'grapes', quantiti: 150, isFresh: false},
+//     {name: 'bananas', quantiti: 100, isFresh: true},
+// ];
 
-const filter = function (array, callback) {
-    const arrFilter = [];
+// const filter = function (array, callback) {
+//     const arrFilter = [];
     
-    for (let e of array) {
-       const res = callback(e);
+//     for (let e of array) {
+//        const res = callback(e);
        
-       if(res) {
-           arrFilter.push(e);
-       };
-    };
+//        if(res) {
+//            arrFilter.push(e);
+//        };
+//     };
 
-    return arrFilter;
-};
+//     return arrFilter;
+// };
 
-const callback = function(e) {
-    return e.quantiti >= 150;
-};
+// const callback = function(e) {
+//     return e.quantiti >= 150;
+// };
 
-console.log(filter(fruts, callback));
+// console.log(filter(fruts, callback));
+
+
+// const test1 = function (a) {
+//     const name = 'Viktor';
+
+//     const testFunction = function (b) {
+//         console.log(name);
+//         console.log(5);
+//         console.log(b);
+//     };
+
+//     return testFunction;
+// };
+
+// const fNa = test1(5);
+
+
+// console.log(fNa(10));
+
+
+// makeDish('mango', 'пирог');
+// makeDish('mango', 'котлеты');
+// makeDish('mango', 'торт');
+
+// makeDish('poly', 'крем');
+// makeDish('poly', 'суп');
+// makeDish('poly', 'чай');
+
+// const createSheff = function (name) {
+//     const makeDish = function (dish) {
+//         console.log(`Повар ${name} приготовил ${dish}`);
+//     };
+//     return makeDish;
+// };
+
+// const fNa = createSheff('Mango');
+// fNa('пирог');
+// fNa('котлеты');
+// fNa('торт');
+
+// const fNb = createSheff('Poly');
+// fNa('крем');
+// fNa('суп');
+// fNa('чай');
+
+
+// const transform = function (value) {
+//     const modifiesByCondition = function(number) {
+//         console.log(Number(number.toFixed(value)));
+//     };
+//     return modifiesByCondition;
+// };
+
+// const transformFunction = transform(2);
+// transformFunction(3.7584);
+// transformFunction(5.254);
+// transformFunction(4.258745);
+
+
+// const calculatesSalary = function (name, value = 0) {
+//     let salary = value;
+
+//     const calculates = {
+//         addSalary (number) {
+//             salary += number;
+//         },
+
+//         removeSalary (number) {
+//             salary -= number;  
+//         },
+
+//         showSalary () {
+//             console.log(`Заработная плата ${name} составляет ${salary}`);
+//         },
+//     };
+
+//     return calculates;
+// };
+
+// const result = calculatesSalary('Valerchik', 15000);
+// result.showSalary();
+// result.addSalary(5000);
+// result.showSalary();
+// result.removeSalary(7000);
+// result.showSalary();
+
+// console.log(result.salary);
+
+
+
+// const fruts = [
+//     {name: 'apples', quantiti: 200, isFresh: true},
+//     {name: 'grapes', quantiti: 150, isFresh: false},
+//     {name: 'bananas', quantiti: 100, isFresh: true},
+// ];
+
+
+// const filter = (array, callback) => {
+//         const arrFilter = [];
+        
+//         for (let e of array) {
+//            const res = callback(e);
+           
+//            if(res) {
+//                arrFilter.push(e);
+//            };
+//         };
+    
+//         return arrFilter;
+//     };
+    
+//     console.log(filter(fruts, e => e.quantiti >= 150));
