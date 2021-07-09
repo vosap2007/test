@@ -400,3 +400,100 @@
 //     };
     
 //     console.log(filter(fruts, e => e.quantiti >= 150));
+
+
+
+
+// 1. Корзина товаров показывает общую стоимость товара.
+// 2. Добавляет товар по имени.
+// 3. Удаляет товар по имени.
+// 4. Можно менять количество товара. Пересчитывает стоимость товара и общую стоимость в корзине.nam
+// 5. Есть баланс постоянногг покупателя. Снимаем деньги с него. И выводим остаток на экран. 
+//    Если на балансе не достаточно денег сообщяем покупателю сумму, которую нужно доплатить.
+
+//    Для решения используем стрелочные функции, замыкания, 'then(контекст)' и callback функции.
+   
+   
+   
+//    const products = [
+//     {name: 'Колбаса', quantity: 1, price: 120},
+//     {name: 'Картошка', quantity: 4, price: 80},
+//     {name: 'Мясо', quantity: 1, price: 125},
+//     {name: 'Молоко', quantity: 2, price: 30},
+// ]
+
+
+// const basketGoods = function (products) {
+//     let totalPrice = 0;
+
+//         for (const product of products) {
+//             totalPrice += product.price;
+//     };
+
+//     return totalPrice;
+// };
+
+// console.log(basketGoods(products));
+
+// const decrementButton = document.querySelector('.js-decrement');
+// const incrementButton = document.querySelector('.js-increment');
+
+// decrementButton.addEventListener('click', () => {
+// counter.decrement();
+// console.log(counter.value);
+// valueEl.textContent = counter.value;
+// }
+// );
+
+// incrementButton.addEventListener('click', () => {
+//     counter.increment();
+//     console.log(counter.value);
+//     valueEl.textContent = counter.value;
+// }
+// );
+    
+// const valueEl = document.querySelector('.js-value');
+
+// const counter = {
+//     value: 0,
+
+//     increment() {
+//         this.value +=1;
+//     },
+
+//     decrement() {
+//         this.value -=1;
+//     },
+// };
+
+
+
+
+
+// const decrementBtn = document.querySelector('.js-decrement');
+// const incrementBtn = document.querySelector('.js-increment');
+// const valueEl = document.querySelector('.js-value');
+
+// console.log(valueEl);
+
+// decrementBtn.addEventListener('click', function() {
+//     counter.decrement();
+//     valueEl.textContent = counter.value;
+// });
+
+// incrementBtn.addEventListener('click', function() {
+//     counter.increment();
+//     valueEl.textContent = counter.value;
+// });
+
+// const counter = {
+//     value: 0,
+
+//     decrement() {
+//         this.value -= 1;
+//     },
+
+//     increment() {
+//         this.value += 1;
+//     },
+// };
