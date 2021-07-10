@@ -85,6 +85,163 @@
 // vova.showGest();
 
 
+// const c = {z:5};
+
+// const b = Object.create(c);
+//       b.y = 18;
+
+//       const a = Object.create(b);
+//       a.x = 23;
+
+// console.log(a)
 
 
+// const Car = function({brend, model, price} = {}) {
+
+//     this.brend = brend;
+//     this.model = model;
+//     this.price = price;
+// };
+
+// Car.prototype.changePrice = function(newPrice) {
+//     this.price = newPrice;
+// };
+
+
+// const myCar = new Car({
+//     brend: 'Kia', 
+//     model: 'Sportage', 
+//     price: 25000,
+//     });
+// myCar.changePrice(27000);
+
+// const myCar2 = new Car({
+//     brend: 'BMW', 
+//     model: 'Coper', 
+//     price: 35000,
+//     });
+// const myCar3 = new Car(
+//     // {
+//     // brend: 'Jeep', 
+//     // model: 'GT-2', 
+//     // price: 40000,
+//     // }
+//     );
+
+// console.log(myCar);
+// console.log(myCar2);
+// console.log(myCar3);
   
+
+// const Car = function({brend, model, price}) {
+//     this.brend = brend;
+//     this.model = model;
+//     this.price = price;
+// };
+
+// Car.prototype.changePrice = function(newPrice) {
+//     this.price = newPrice;
+// };
+
+// const myCar = new Car({
+//     brend: 'Kia',
+//     model: 'Sportage',
+//     price: 25000,
+// });
+
+// console.log(myCar);
+
+// myCar.changePrice(30000);
+
+// console.log(myCar);
+
+
+// const User = function({name, email, password}) {
+//     this.name = name;
+//     this.email = email;
+//     this.password = password;
+// };
+
+// User.prototype.changeName = function(newName) {
+//     this.name = newName;
+// };
+
+// User.prototype.changeEmail = function(newEmail) {
+//     this.email = newEmail;
+// };
+
+// User.prototype.changePassword = function(newPassword) {
+//     this.password = newPassword;
+// };
+
+// const myUser = new User({
+//     name: 'Volodymyr',
+//     email: 'rodastars@i.ua',
+//     password: 123123,
+// });
+
+// console.log(myUser);
+
+// myUser.changeName('Denis');
+// myUser.changeEmail('fdsa@d.ya');
+// myUser.changePassword(987987987);
+
+// console.log(myUser);
+
+
+// const House = function({ clas, room, state}) {
+//     this.clas = clas;
+//     this.room = room;
+//     this.state = state;
+// };
+
+// House.prototype.changeClass = function(newClas) {
+//     this.clas = newClas;
+// };
+
+// const myHouse = new House({
+//     clas: 'bisnes',
+//     room: 3,
+//     state: 'new house',
+// });
+
+// console.log(myHouse);
+
+// myHouse.changeClass('vip');
+
+// console.log(myHouse);
+// console.dir(House)
+
+
+
+const Counter = function({value = 0, step = 1}) {
+    this.value = value;
+    this.step = step;
+};
+
+Counter.prototype.decrement = function() {
+    this.value -= this.step;
+};
+
+Counter.prototype.increment = function() {
+    this.value += this.step;
+};
+
+const counter1 = new Counter({
+    value: 0, 
+    step: 2,
+});
+
+const decrementBtn = document.querySelector('.js-decrement');
+const incrementBtn = document.querySelector('.js-increment');
+const valueEl = document.querySelector('.js-value');
+
+decrementBtn.addEventListener('click', () => {
+    counter1.decrement();
+    valueEl.textContent = counter1.value;
+}); 
+
+incrementBtn.addEventListener('click', () => {
+    counter1.increment();
+    valueEl.textContent = counter1.value;
+}); 
