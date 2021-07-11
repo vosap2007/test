@@ -214,34 +214,109 @@
 
 
 
-const Counter = function({value = 0, step = 1}) {
-    this.value = value;
-    this.step = step;
+// const Counter = function({value = 0, step = 1}) {
+//     this.value = value;
+//     this.step = step;
+// };
+
+// Counter.prototype.decrement = function() {
+//     this.value -= this.step;
+// };
+
+// Counter.prototype.increment = function() {
+//     this.value += this.step;
+// };
+
+// const counter1 = new Counter({
+//     value: 0, 
+//     step: 2,
+// });
+
+// const decrementBtn = document.querySelector('.js-decrement');
+// const incrementBtn = document.querySelector('.js-increment');
+// const valueEl = document.querySelector('.js-value');
+
+// decrementBtn.addEventListener('click', () => {
+//     counter1.decrement();
+//     valueEl.textContent = counter1.value;
+// }); 
+
+// incrementBtn.addEventListener('click', () => {
+//     counter1.increment();
+//     valueEl.textContent = counter1.value;
+// }); 
+
+
+// class Gest {
+//     constructor({name, room, price}){
+//         this.name = name;
+//         this.room = room;
+//         this.price = price;
+//     };
+
+//     changePrice (newPrice) {
+//     this.price = newPrice;
+// };
+
+//     get roomGet() {
+//         return this.room;
+//     };
+
+//     set roomGet(newRoom) {
+//         this.room = newRoom;
+//     }
+// }
+
+
+
+// const fred = new Gest({
+//     name: 'Freddi',
+//     room: 47,
+//     price: 35,
+// })
+
+// console.log(fred);
+
+// fred.changePrice(30);
+
+// console.dir(fred);
+
+// console.dir(fred.roomGet);
+// console.dir(fred.roomGet = 50);
+
+// console.dir(Gest);
+
+
+class Gest {
+    constructor(name = 'gest', room = 0) {
+        this.name = name;
+        this.room = room;
+    };
+
+    get changeName() {
+        console.log(`Имя клиента ${this.name}`)
+    };
+
+    set changeName(newName) {
+        this.name = newName;
+    };
+
+    changePrice(newPrice) {
+        this.price = newPrice;
+    }
 };
 
-Counter.prototype.decrement = function() {
-    this.value -= this.step;
-};
+class GestVip extends Gest {
+    constructor({price, ...restProps}) {
+        super(restProps);
 
-Counter.prototype.increment = function() {
-    this.value += this.step;
-};
+        this.price = price;
+    }
+}
 
-const counter1 = new Counter({
-    value: 0, 
-    step: 2,
-});
+const myGest = new GestVip({name:'Leonardo', room: 17, price: 350});
+console.log(myGest);
+// console.log(myGest.changeName = 'Leo');
 
-const decrementBtn = document.querySelector('.js-decrement');
-const incrementBtn = document.querySelector('.js-increment');
-const valueEl = document.querySelector('.js-value');
-
-decrementBtn.addEventListener('click', () => {
-    counter1.decrement();
-    valueEl.textContent = counter1.value;
-}); 
-
-incrementBtn.addEventListener('click', () => {
-    counter1.increment();
-    valueEl.textContent = counter1.value;
-}); 
+// myGest.changePrice(250);
+// console.dir(myGest);
