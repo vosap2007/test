@@ -228,10 +228,111 @@
 
 // console.log(analiticTags);
 
-const obj = {
-    login: 'Bob',
-};
+// const obj = {
+//     login: 'Bob',
+// };
 
-//const key = 'login';
+// //const key = 'login';
 
-console.log(obj['login'])
+// console.log(obj['login'])
+
+
+// const number = [2,16,23,4,8,1,45,98,0];
+// const sortEl = [...number].sort((curEL, nexEL) => nexEL - curEL);
+
+// console.log(sortEl);
+// console.log(number);
+
+// const letters = ['g', 'h', 'q', 'x', 'o', 'l', 'b', 'd'];
+
+// console.log(letters.sort());
+
+
+// const tweets =[
+//             {id: 'Player-1', like: 5, tags: ['js', 'Node.js']},
+//             {id: 'Player-2', like: 2, tags: ['html', 'css']},
+//             {id: 'Player-3', like: 17, tags: ['html', 'css', 'Node.js']},
+//             {id: 'Player-4', like: 10, tags: ['js', 'React']},
+//             {id: 'Player-5', like: 14, tags: ['css', 'React']},
+//         ];
+
+//         const sortArr = [...tweets].sort((a, b) => {
+//             return a.like - b.like;
+//         });
+
+//         console.log(sortArr);
+
+// const name = ['Volodymyr', 'Evgen', 'Jim', 'Nikola', 'Piter', 'Janet'];
+
+// const sortName = [...name].sort((a, b) => {
+//     return 
+// });
+
+// console.log(sortName);
+
+// const tweets =[
+//                 {id: 'Player-1', like: 5, tags: ['js', 'Node.js']},
+//                 {id: 'Player-2', like: 2, tags: ['html', 'css']},
+//                 {id: 'Player-3', like: 17, tags: ['html', 'css', 'Node.js']},
+//                 {id: 'Player-4', like: 10, tags: ['js', 'React']},
+//                 {id: 'Player-5', like: 14, tags: ['css', 'React']},
+//             ];
+
+// const arrEl = tweets.flatMap(t => {
+//     return t.tags;
+// });
+
+// const analiticTags = arrEl.reduce((acc, value) => {
+//     if (acc[value]) {
+//         acc[value] += 1;
+//         return acc;
+//      };
+//      acc[value] = 1;
+//     return acc;
+// }, {});
+
+// console.log(analiticTags);
+
+
+
+// const number = [120,2,98,16,23,4,8,1,45,0];
+
+// const doublesNumber = number.map(number => number * 2);
+
+// console.log(doublesNumber);
+
+// const filterNumbers = doublesNumber.filter(num => num > 30);
+
+// console.log(filterNumbers);
+
+// const sortNum = filterNumbers.sort((numCur, numNext) => numCur - numNext);
+
+// console.log(sortNum);
+// console.log(number);
+
+
+// const number = [120,2,98,16,23,4,8,1,45,0];
+
+// const doublesNumber = number
+//     .map(number => number * 2)
+//     .filter(num => num < 30)
+//     .sort((numCur, numNext) => numCur - numNext);
+
+
+// console.log(doublesNumber);
+// console.log(number);
+
+
+const players =[
+        {id: 'Player-1', name: 'Poly', timePlayd: 310, points: 45, online: true},
+        {id: 'Player-2', name: 'Mark', timePlayd: 280, points: 32, online: false},
+        {id: 'Player-3', name: 'Jorg', timePlayd: 510, points: 98, online: true},
+        {id: 'Player-4', name: 'Mango', timePlayd: 458, points: 75, online: false},
+        {id: 'Player-5', name: 'Lili', timePlayd: 154, points: 55, online: true},
+    ]
+
+    const isOnline = players
+    .filter(player => player.online)
+    .sort((carrEl, nextEl) => carrEl.timePlayd - nextEl.timePlayd);
+
+    console.table(isOnline);
