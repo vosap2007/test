@@ -323,16 +323,16 @@
 // console.log(number);
 
 
-const players =[
-        {id: 'Player-1', name: 'Poly', timePlayd: 310, points: 45, online: true},
-        {id: 'Player-2', name: 'Mark', timePlayd: 280, points: 32, online: false},
-        {id: 'Player-3', name: 'Jorg', timePlayd: 510, points: 98, online: true},
-        {id: 'Player-4', name: 'Mango', timePlayd: 458, points: 75, online: false},
-        {id: 'Player-5', name: 'Lili', timePlayd: 154, points: 55, online: true},
-    ]
+// const players =[
+//         {id: 'Player-1', name: 'Poly', timePlayd: 310, points: 45, online: true},
+//         {id: 'Player-2', name: 'Mark', timePlayd: 280, points: 32, online: false},
+//         {id: 'Player-3', name: 'Jorg', timePlayd: 510, points: 98, online: true},
+//         {id: 'Player-4', name: 'Mango', timePlayd: 458, points: 75, online: false},
+//         {id: 'Player-5', name: 'Lili', timePlayd: 154, points: 55, online: true},
+//     ]
 
-    const isOnline = players
-    .filter(player => player.online)
-    .sort((carrEl, nextEl) => carrEl.timePlayd - nextEl.timePlayd);
+//     const isOnline = players
+//     .filter(player => player.online)
+//     .sort((carrEl, nextEl) => carrEl.timePlayd - nextEl.timePlayd);
 
-    console.table(isOnline);
+//     console.table(isOnline);
