@@ -129,3 +129,233 @@
 //   }
 
 
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//     let message;
+//     let totalPrice = pricePerDroid * orderedQuantity;
+
+//     if(pricePerDroid * orderedQuantity > customerCredits) {
+//         message = "Insufficient funds!";
+//     } else {
+//         customerCredits -= totalPrice;
+
+//         message = `You ordered ${orderedQuantity} droids, you have ${customerCredits} credits left`;
+//     }
+
+//     return message;
+//   };
+
+//   console.log(makeTransaction(3000, 5, 23000));
+  
+//   console.log(makeTransaction(1000, 3, 15000));
+  
+
+// function checkPassword(password) {
+//     const ADMIN_PASSWORD = 'jqueryismyjam';
+//     let message;
+  
+//     if () { // Change this line
+//       message =  'Canceled by user!';
+//     } else if () { // Change this line
+//       message = 'Welcome!';
+//     } else {
+//       message = 'Access denied, wrong password!';
+//     }
+  
+//     return message;
+//   }
+
+// function checkStorage(available, ordered) {
+//     let message;
+//     if (ordered === 0) {
+//         message = 'There are no products in the order!';
+//     } else if(ordered > available) {
+//         message = 'Your order is too large, there are not enough items in stock!';
+//     } else {
+//         message = 'The order is accepted, our manager will contact you';
+//     }
+//     return message;
+//   }
+  
+
+
+// function isNumberInRange(start, end, number) {
+//     const isInRange = start <= number && number <= end ;
+  
+//     return isInRange;
+//   }
+
+
+// function getDiscount(totalSpent) {
+//     const BASE_DISCOUNT = 0;
+//     const BRONZE_DISCOUNT = 0.02;
+//     const SILVER_DISCOUNT = 0.05;
+//     const GOLD_DISCOUNT = 0.1;
+//     let discount;
+    
+//     if(totalSpent >= 50000) {
+//         discount = GOLD_DISCOUNT;
+//     } else if( (totalSpent < 50000) && (totalSpent >= 20000)) {
+//         discount = SILVER_DISCOUNT;
+//     } else if( (totalSpent < 20000) && (totalSpent >= 5000)) {
+//         discount = BRONZE_DISCOUNT;
+//     } else{
+//         discount = BASE_DISCOUNT;
+//     };
+
+//     return discount;
+//   };
+
+//   console.log(getDiscount(8250))
+
+
+// function checkStorage(available, ordered) {
+//     let message;
+    
+//     (ordered > available) ?  message = "Not enough goods in stock!" : message = "The order is accepted, our manager will contact you";
+  
+//     // if (ordered > available) {
+//     //   message = "Not enough goods in stock!";
+//     // } else {
+//     //   message = "The order is accepted, our manager will contact you";
+//     // }
+  
+//     // Change code above this line
+//     return message;
+//   }
+
+//   console.log(checkStorage(5, 13));
+
+
+// function checkPassword(password) {
+//     const ADMIN_PASSWORD = "jqueryismyjam";
+//     let message;
+    
+//     password === ADMIN_PASSWORD ? 
+//     message = "Access is allowed" :
+//     message = "Access denied, wrong password!"
+  
+//     // Change code above this line
+//     return message;
+//   }
+
+//   console.log(checkPassword("jqueryismyjm"));
+  
+
+// function getSubscriptionPrice(type) {
+//     let price;
+//     // Change code below this line
+  
+//    switch (type) { // Change this line
+//       case "starter": 
+//         price = 0; // Change this line
+//         break;
+  
+//       case "professional": // Change this line
+//         price = 20; // Change this line
+//         break;
+  
+//       case "organization": // Change this line
+//         price = 50; // Change this line
+//         break;
+//     }
+  
+//     // Change code above this line
+//     return price;
+//   }
+
+  
+  
+  
+
+//   console.log(getSubscriptionPrice("professional"));
+//   console.log(getSubscriptionPrice("organization"));
+//   console.log(getSubscriptionPrice("starter") );
+
+// function checkPassword(password) {
+//     const ADMIN_PASSWORD = "jqueryismyjam";
+//     let message;
+    
+//     switch (password) {
+//         case null:
+//            message = "Canceled by user!"; 
+//             break;
+
+//             case ADMIN_PASSWORD:
+//                 message = "Welcome!"; 
+//             break;
+    
+//         default:
+//             message = "Access denied, wrong password!";
+//     }
+    
+//     return message;}
+
+//     console.log(checkPassword(null));
+
+// China - 100 кредитов
+// Chile - 250 кредитов
+// Australia - 170 кредитов
+// Jamaica - 120 кредитов
+
+//  "Sorry, there is no delivery to your country"
+
+// function getShippingCost(country) {
+//     let message;
+    
+//     switch (country) {
+//         case 'China':
+//             message = `Shipping to China will cost 100 credits`
+//             break;
+
+//             case 'Chile':
+//             message = `Shipping to China will cost 250 credits`
+//             break;
+
+//             case 'Australia':
+//             message = `Shipping to China will cost 170 credits`
+//             break;
+
+//             case 'Jamaica':
+//             message = `Shipping to China will cost 120 credits`
+//             break;
+    
+//         default:
+//             message = "Sorry, there is no delivery to your country"
+//     }
+
+//     return message;
+//   }
+
+//   console.log(getShippingCost('Australia'))
+
+
+// function formatMessage(message, maxLength) {
+//     let result;
+    
+//     if (message.length <= maxLength) {
+//         result = message;
+//     } else {
+//         result = message.slice(0, maxLength)+'...';
+//     }
+
+//     return result;
+//   }
+
+//   console.log(formatMessage("Vestibulum facilisis purus nec", 20))
+
+// function checkForName(fullName, name) {
+//     const result = fullName.includes(name);
+//      return result;
+//    };
+
+//    console.log(checkForName("Egor Kolbasov", "egor"))
+
+// function checkForSpam(message) {
+//     let result;
+    
+//     result = message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale');
+//     return result;
+//   }
+
+//   console.log(checkForSpam("Get best sale offers now!"))
+
