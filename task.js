@@ -359,14 +359,18 @@
 
 //   console.log(checkForSpam("Get best sale offers now!"))
 
- const arr = [1,2,3,4,5];
+//  const arr = [1,2,3,4,5];
+// arr.map((n) => {
+//     console.log(n)
+// })
 
-for (let index = 0; index < arr.length; index++) {
-    const element = arr[index];
 
-    if(index === 3) {
-        console.log(`Это ${index}`)
-    }
-    console.log(element);
-}
+// for (let index = 0; index < arr.length; index++) {
+//     const element = arr[index];
+
+    
+//     console.log(element);
+// }
+
+
 
