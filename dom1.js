@@ -280,3 +280,55 @@ import transaction from './data/transaction.js';
 
 // theadEl.insertAdjacentHTML('beforeend', createTransactionAll);
 
+// const buttonEl = document.querySelector('.js-button');
+// const onceFileEl = document.querySelector('.js-once-file');
+
+// buttonEl.addEventListener('click', handleClick);
+
+// function handleClick () {
+//     onceFileEl.insertAdjacentHTML('beforeend', '<p>Hello! You click button! Good!!!</p>')
+// }
+
+// const formEl = document.querySelector('.js-register-form');
+
+// formEl.addEventListener('submit', onFormSubmit);
+
+// function onFormSubmit (event) {
+// event.preventDefault();
+
+// const formData = new FormData(event.currentTarget);
+
+// formData.forEach((name, value) => {
+//     console.log(name);
+//     console.log(value);
+// })
+// };
+
+// const inputEl = document.querySelector('.js-input');
+// // inputEl.addEventListener('focus', onInputFocus);
+// // inputEl.addEventListener('blur', onInputBlur);
+//  inputEl.addEventListener('input', onInput);
+
+// const nameSpan = document.querySelector('.js-button > span');
+// const licenseEl = document.querySelector('.js-license');
+//       licenseEl.addEventListener('change', onLicense);
+
+// const buttonEl = document.querySelector('.js-button');
+
+// // function onInputFocus() {
+// //     console.log('Инпут получил фокус');
+// // } 
+
+// // function onInputBlur() {
+// //     console.log('Инпут потерял фокус');
+// // } 
+
+// function onInput(event) {
+//          nameSpan.textContent = event.currentTarget.value
+//      };
+
+// function onLicense(event) {
+//     buttonEl.disabled = !event.currentTarget.checked;
+// }
+
+
